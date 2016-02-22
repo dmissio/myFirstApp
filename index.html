@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Eat Your Greens!</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	 <link rel="stylesheet" type="text/css" href="style.css">
+	<link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,900|Fauna+One' rel='stylesheet' type='text/css'>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+</head>
+
+<!-- font-family: 'Fauna One', serif;
+font-family: 'Playfair Display', serif; -->
+
+<body>
+<header>
+<div class="wrapper top">
+<div class="mascot">
+	<img src="cat-farm-color.png" alt="">
+</div>
+<h1 class="title">Eat Your Greens!</h1>
+<h2>Give us some information and we'll help you find a perfect vegan or vegetarian recipe.</h2>
+
+
+<div class="veganChoice">
+ <form id="veganChoice" action="">
+ 		<div class="allowedDiet form-unity">
+                <label for="allowedDiet" class = "heading">Vegetarian or Vegan?</label>
+                <select name="diet" id="diet" class="styled-select">
+                	<option value="">Choose one!</option>
+                    <option value="386^Vegan">Vegan</option>
+                    <option value="388^Lacto vegetarian">Lacto Vegetarian</option>
+                    <option value="389^Ovo vegetarian">Ovo Vegetarian</option>
+                    <option value="387^Lacto-ovo vegetarian">Lacto-Ovo Vegetarian</option>            
+                </select>
+                </div>
+
+
+			<div class="allowedCourse form-unity">
+				 <label for="allowedCourse" class = "heading">Type of Meal?</label>
+                <select name="course" id="course">
+                	<option value="">Choose one!</option>
+                    <option value="course^course-Main Dishes">Main Dishes</option>
+                    <option value="course^course-Lunch and Snacks">Lunch and Snacks</option>
+                    <option value="course^course-Breakfast and Brunch">Breakfast and Brunch</option>
+                    <option value="course^course-Side Dishes">Side Dishes</option>
+                    <option value="course^course-Soups course^course-Salads">Soups and Salads</option>            
+                </select>
+                </div>
+			<div class="maxTotalTimeInSeconds form-unity">
+                <label for="maxTotalTimeInSeconds" class = "heading">How Long Do We Have?</label>
+                <select name="time" id="time">
+                	<option value="">Choose one!</option>
+                	<option value="1800">No time! (30 minutes or less)</option>
+                    <option value="3600">Some time! (between 30 and 60 minutes)</option>
+                    <option value="5400">So much time! (60 minutes or more)</option>
+                </select>
+                </div>
+
+			<div class="allowedIngredient form-unity">
+                <label for="allowedIngredient[]" class = "heading allowedIngredient">Give me one thing to work with?</label>
+                <input type="text" id="allowedIngredient" name="allowedIngredient" value="ex. carrots">
+                </div>
+
+
+			<div class="allowedAllergy form-unity">
+                <label for="allowedAllergy" class = "heading">Any Allergies?</label>
+                <ul class="clearfix">
+                	<li><input type = "checkbox" name = "allergy" value = "Gluten" id = "checkbox1" class = "roundedOne"><label for="checkbox1" class = "checkLabel">Gluten</label></li>
+                    <li><input type = "checkbox" name = "allergy" value="Wheat" id = "checkbox2" class = "roundedOne"><label for="checkbox2" class = "checkLabel">Wheat</label></li>
+                    <li><input type = "checkbox" name = "allergy" value="Dairy" id = "checkbox3" class = "roundedOne"><label for="checkbox3" class = "checkLabel">Dairy</label></li>
+                    <li><input type = "checkbox" name = "allergy" value="Egg" id = "checkbox4" class = "roundedOne"><label for="checkbox4" class = "checkLabel">Egg</label></li>
+                    <li><input type = "checkbox" name = "allergy" value="Peanut" id = "checkbox5" class = "roundedOne"><label for="checkbox5" class = "checkLabel">Peanut</label></li>
+                    <li><input type = "checkbox" name = "allergy" value="Tree Nut" id = "checkbox6" class = "roundedOne"><label for="checkbox6" class = "checkLabel">Tree Nut</label></li>
+                    <li><input type = "checkbox" name = "allergy" value="Seafood" id = "checkbox7" class = "roundedOne"><label for="checkbox7" class = "checkLabel">Seafood</label></li>
+                    <li><input type = "checkbox" name = "allergy" value="Sesame" id = "checkbox8" class = "roundedOne"><label for="checkbox8" class = "checkLabel">Sesame</label></li>
+                    <li><input type = "checkbox" name = "allergy" value="Soy" id = "checkbox9" class = "roundedOne"><label for="checkbox9" class = "checkLabel">Soy</label></li>
+                    <li><input type = "checkbox" name = "allergy" value="Sulfite" id = "checkbox10" class = "roundedOne"><label for="checkbox10" class = "checkLabel">Sulfite</label></li>
+                    </ul>      
+
+                </select>
+                </div>
+
+				<div class="form-unity">
+				<input type="submit" id="submit" value="Get Recipes!">
+				</div>
+            </form>
+            </header>
+</div> <!-- closes veganChoice -->
+
+<div class="wrapper bottom">
+<main>
+	<div class="recipeResponse hidden" id="recipeResponse">
+		
+
+	</div>
+	<div class="wrapper selectAnother hidden" id="selectAnother">
+<input type="button" id="refresh" value="Select Another?">
+<div class = "yummly">
+
+<p class = "coded">code/cat by</p>
+<a href="https://twitter.com/davidmissio" target = "_blank" class = "twitter"><p>David Missio</p></a>
+
+
+<p class = "power">powered by</p>
+<a href="http://www.yummly.com" target = "_blank"><img src="yummly.jpg" class = "yummly" alt=""></a>
+
+</div>
+</div>
+</main>
+</div>
+
+
+
+
+</div> <!-- closes wrapper -->
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
